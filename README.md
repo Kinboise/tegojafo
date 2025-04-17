@@ -5,7 +5,9 @@
 
 ## 使用方法
 
-使用`GET`请求。
+- 安装依赖`flask`和`ulid-py`；
+- 使用`python app.py`在`http://localhost:2010`启动服务器；
+- 使用`GET`请求访问服务器。
 
 ### 开局
 

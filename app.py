@@ -19,8 +19,8 @@ def play(game, note):
     elif note[1:] in [fmt(i) for i in game['legal']]:
         orig = b.locate(game['turn'])
         piece = b.get(note[1:])
-        b.place(note[1:], game['turn'])
         b.place(orig, 0)
+        b.place(note[1:], game['turn'])
         if piece == 1:
             game['hand'][game['turn'] - 2] += 1
             oper = '='
